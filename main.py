@@ -1,5 +1,5 @@
 
-from Code.game import Game
+from Code.Game import Game
 
 game = Game()
 game.run()
