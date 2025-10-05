@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-from abc import ABC
+from abc import ABC, abstractmethod
 
 import pygame.image
 
@@ -15,5 +15,6 @@ class Entity(ABC):
         self.speed = 0
         self.health = ENTITY_HEALTH[self.name]
 
+    @abstractmethod
     def move(self, ):
         pass
